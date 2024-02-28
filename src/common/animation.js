@@ -51,7 +51,7 @@ export function initAnimation() {
       cy = height / 2;
 
     context.globalCompositeOperation = 'lighter';
-    context.strokeStyle = '#fff';
+    context.strokeStyle = 'rgba(160, 160, 160, 0.1)';
     context.shadowColor = '#fff';
     context.lineWidth = 2;
     context.beginPath();
@@ -70,8 +70,8 @@ export function initAnimation() {
       y += (200 * value) / MAX_OFFSET;
       y += (x / cx) * width * 0.1;
 
-      context.globalAlpha = 0.1 - value / MAX_OFFSET;
-      context.shadowBlur = SHADOW_STRENGTH * o;
+      // context.globalAlpha = 0.1 - value / MAX_OFFSET;
+      // context.shadowBlur = SHADOW_STRENGTH * o;
 
       context.lineTo(cx + x, cy + y);
       context.stroke();
