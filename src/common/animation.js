@@ -51,7 +51,7 @@ export function initAnimation() {
       cy = height / 2;
 
     context.globalCompositeOperation = 'lighter';
-    context.strokeStyle = 'rgba(128, 128, 128, 0.2)';
+    context.strokeStyle = 'rgba(160, 160, 160, 0.2)';
     context.shadowColor = '#fff';
     context.lineWidth = 2;
     context.beginPath();
