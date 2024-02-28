@@ -67,6 +67,7 @@ const ImageWrapper = styled.div`
   border-left: 1px solid whitesmoke;
   @media screen and (max-width: 1150px){
     width: 460px;
+    display: none;
     /* border-bottom: 1px solid whitesmoke; */
   }
 `
