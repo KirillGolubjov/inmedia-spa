@@ -6,11 +6,12 @@ const commonStyles = css`
 `;
 
 const sizes = {
-  small: css`
+  extraSmall: css`
     ${commonStyles}
-    padding: 0 25px;
+    padding: 0 35px;
+    font-size: 15px;
   `,
-  medium: css`
+  small: css`
     ${commonStyles}
     padding: 0 40px;
     font-size: 16px;
@@ -69,14 +70,15 @@ const Button = styled.button`
   
   ${props => sizes[props.$size]}
   ${props => variations[props.$variation]}
-  @media screen and (max-width: 912px) {
+  /* @media screen and (max-width: 912px) {
     ${props => props.$size !== 'small' && sizes['middle']}
   }
-  @media screen and (max-width: 768px) {
-    ${props => props.$size !== 'small' && sizes['medium']}
-  }
-  @media screen and (max-width: 540px) {
+  */
+  @media screen and (max-width: 430px) {
     ${props => props.$size !== 'small' && sizes['small']}
+  }
+  @media screen and (max-width: 380px) {
+    ${props => props.$size !== 'extraSmall' && sizes['extraSmall']}
   }
  
 `

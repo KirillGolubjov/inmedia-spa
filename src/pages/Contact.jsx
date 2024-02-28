@@ -18,7 +18,7 @@ const StyledSection = styled.section`
   flex-wrap: wrap;
   justify-content: center;
    @media screen and (max-width: 1110px){
-    
+  
   }
   `
 
@@ -33,6 +33,10 @@ const Block = styled.div`
   gap: ${(props) => props.$gap}rem;
   font-size: 16px;
   justify-content: space-between;
+  @media screen and (max-width: 430px){
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
 `
 
 const StyledP = styled.p`
@@ -69,7 +73,7 @@ function Contact() {
           </StyledSpan>
         </Block>
         <Block >
-          <Block $flexDirection={'column'} $gap={'1'}>
+          <Block $flexDirection={'column'} $gap={'1'} >
             <StyledSpan>
               <StyledIcon $fontSize='17'>
                 <FaPhoneVolume />
@@ -77,9 +81,9 @@ function Contact() {
               <a href='tef:+3725511168'>+372 55 111 68</a> 
             </StyledSpan>
             <StyledP>Affiliate Manager</StyledP>
-            
           </Block>
-          <Block $flexDirection={'column'} $gap={'1'}>
+
+          <Block $flexDirection={'column'} $gap={'1'} >
             <StyledSpan>
               <StyledIcon $fontSize='23'>
                 <IoIosMail />

@@ -13,7 +13,7 @@ export function initAnimation() {
   var POINTS = MAX_OFFSET / SPACING;
   var PEAK = MAX_OFFSET * 0.25;
   var POINTS_PER_LAP = 6;
-  var SHADOW_STRENGTH = 6;
+  // var SHADOW_STRENGTH = 6;
 
   setup();
 

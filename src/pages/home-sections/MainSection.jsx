@@ -6,7 +6,7 @@ import CanvasAnimation from './CanvasAnimation';
 const StyledText = styled.div`
   line-height: 1.5;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 3rem;
   width: ${(props) => props.width}px;
 `
