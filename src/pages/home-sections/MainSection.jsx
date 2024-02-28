@@ -25,7 +25,8 @@ const Section = styled.section`
   /* height: 75vh; */
   background-color: var(--color-brand-black);
   padding: 14rem 0;
-
+  position: relative;
+  overflow: hidden;
   @media screen and (max-width: 768px){
     padding: 6rem 0 4rem;
   }
@@ -38,6 +39,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   gap: 3rem;
+  
 
   @media screen and (max-width: 1024px){
     gap: 0rem;
@@ -134,6 +136,8 @@ const StyledAnimation = styled.div`
   }
   
 `;
+
+
 
 function MainSection() {
 
