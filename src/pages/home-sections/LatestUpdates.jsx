@@ -37,7 +37,7 @@ const Content = styled.div`
 `
 const PictureWrapper = styled.div`
   width: 400px;
-  aspect-ratio: 16/9;
+  /* aspect-ratio: 16/9; */
   background-color: var(--color-brand-black);
 `
 
