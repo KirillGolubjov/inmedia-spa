@@ -37,14 +37,14 @@ const StyledUl = styled.ul`
   padding-inline-start: 0; 
   list-style-type: none; 
   white-space: nowrap; 
-  animation: ${marquee} 25s linear infinite; 
+  animation: ${marquee} 50s linear infinite; 
   display: flex;
   gap: 5rem;
   
   ${(props) =>
     props.$reverse &&
     css`
-    animation: ${reverseMarquee} 25s linear infinite;
+    animation: ${reverseMarquee} 50s linear infinite;
   `
   };
 
@@ -100,7 +100,7 @@ function SignUp() {
           onMouseLeave={handleMouseLeave}
           $reverse={rowNumber === 2 ? 'reverse' : ''}
         >
-          {Array.from({ length: 7 }).map(((el = 'sign up', i) => (
+          {Array.from({ length: 15 }).map(((el = 'sign up', i) => (
             <StyledLi key={i}>
               
                 <Modal>
@@ -111,7 +111,7 @@ function SignUp() {
                     <SingUpForm type='PUBLISHER' />
                   </Modal.Window>
                 </Modal>
-               
+
             </StyledLi>
           )))}
         </StyledUl>
