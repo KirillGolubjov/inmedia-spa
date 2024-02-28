@@ -21,6 +21,10 @@ const arrowAnimation = keyframes`
 
 const ContentWrapper = styled.div`
   display: flex;
+  @media screen and (max-width: 1150px){
+    display: flex;
+    flex-direction: column-reverse;
+  }
 `
 
 const StyledH1 = styled.h1`
@@ -61,8 +65,11 @@ const ImageWrapper = styled.div`
   display: flex;
   align-items: center;
   border-left: 1px solid whitesmoke;
+  @media screen and (max-width: 1150px){
+    width: 460px;
+    /* border-bottom: 1px solid whitesmoke; */
+  }
 `
-
 
 function SingUpForm({ type }) {
   const { close } = useContext(ModalContext);
