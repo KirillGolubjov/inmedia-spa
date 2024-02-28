@@ -65,6 +65,10 @@ canvas {
   left: 0;
 }
 
+canvas:focus {
+  outline: none;
+}
+
 input,
 button,
 textarea,

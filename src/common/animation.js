@@ -70,7 +70,7 @@ export function initAnimation() {
       y += (200 * value) / MAX_OFFSET;
       y += (x / cx) * width * 0.1;
 
-      // context.globalAlpha = 0.1 - value / MAX_OFFSET;
+      context.globalAlpha = 0.1 - value / MAX_OFFSET;
       context.shadowBlur = SHADOW_STRENGTH * o;
 
       context.lineTo(cx + x, cy + y);
