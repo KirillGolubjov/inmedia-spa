@@ -8,12 +8,18 @@ import SingUpModal from "../ui/SingUpModal";
 const StyledSection = styled.section`
   max-width: 1240px;
   margin: 0 auto;
-  padding-top: 10rem;
+  padding: 10rem 1.5rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: var(--color-brand-black);
   color: var(--color-brand-white);
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+   @media screen and (max-width: 1110px){
+    
+  }
   `
 
 const Content = styled.section`
