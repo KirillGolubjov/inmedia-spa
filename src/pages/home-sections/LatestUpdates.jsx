@@ -19,7 +19,7 @@ const ContentWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: center;
+  /* justify-content: center; */
   @media screen and (max-width: 1024px){
     gap: 4rem;
   }
