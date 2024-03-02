@@ -3,13 +3,7 @@ import { MAIN_TITLE } from '../../common/consts';
 import SingUpModal from '../../ui/SingUpModal';
 import CanvasAnimation from './CanvasAnimation';
 
-const StyledText = styled.div`
-  line-height: 1.5;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-  width: ${(props) => props.width}px;
-`
+
 
 const StyleButtonWrapper = styled.div`
   display: flex;
@@ -24,7 +18,7 @@ const StyledH1 = styled.h1`
 const Section = styled.section`
   /* height: 75vh; */
   background-color: var(--color-brand-black);
-  padding: 14rem 0;
+  padding: 15rem 0;
   position: relative;
   overflow: hidden;
   @media screen and (max-width: 768px){
@@ -41,10 +35,10 @@ const Container = styled.div`
   gap: 3rem;
   
 
-  @media screen and (max-width: 1024px){
+  @media screen and (max-width: 1050px){
     gap: 0rem;
   }
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 868px){
     flex-wrap: wrap;
     flex-direction: column-reverse;
     gap: 4rem;
@@ -63,6 +57,15 @@ const Wrapper = styled.div`
    @media screen and (max-width: 390px){
     width: 315px;
   }
+`
+
+const StyledText = styled.div`
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: ${(props) => props.width}px;
 `
 
 const commonKeyframeProperties = `
@@ -127,6 +130,7 @@ const StyledAnimation = styled.div`
   }
   @media screen and (max-width: 820px){
     animation: ${trackingInContractBck3} 10s ease-in-out infinite;
+    padding-top: 4rem;
   }
   @media screen and (max-width: 412px){
     animation: ${trackingInContractBck4} 10s ease-in-out infinite;
@@ -165,7 +169,7 @@ function MainSection() {
         <Wrapper >
           <StyledAnimation>UNLOCK<br /> YOUR<br /> POTENTIAL<br /> WITH <br />INMEDIA</StyledAnimation>
         </Wrapper>
-        <CanvasAnimation />
+        {/* <CanvasAnimation /> */}
       </Container>
     </Section >
   )
