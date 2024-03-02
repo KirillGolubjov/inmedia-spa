@@ -3,8 +3,6 @@ import { MAIN_TITLE } from '../../common/consts';
 import SingUpModal from '../../ui/SingUpModal';
 import CanvasAnimation from './CanvasAnimation';
 
-
-
 const StyleButtonWrapper = styled.div`
   display: flex;
   gap: 2rem;
@@ -169,7 +167,7 @@ function MainSection() {
         <Wrapper >
           <StyledAnimation>UNLOCK<br /> YOUR<br /> POTENTIAL<br /> WITH <br />INMEDIA</StyledAnimation>
         </Wrapper>
-        {/* <CanvasAnimation /> */}
+        <CanvasAnimation />
       </Container>
     </Section >
   )
