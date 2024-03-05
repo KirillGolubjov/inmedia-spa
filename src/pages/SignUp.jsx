@@ -1,7 +1,8 @@
 import { useState } from "react";
 import styled, { keyframes, css } from "styled-components";
-import Modal from "./Modal";
+import Modal from "../ui/Modal";
 import SingUpForm from "../features/authentication/SingUpForm";
+
 
 const marquee = keyframes`
   0% {
@@ -102,15 +103,15 @@ function SignUp() {
         >
           {Array.from({ length: 7 }).map(((el = 'sign up', i) => (
             <StyledLi key={i}>
-              
-                <Modal>
-                  <Modal.Open opens='signup'>
+
+              <Modal>
+                <Modal.Open opens='signup'>
                   <StyledA>{el}</StyledA>
-                  </Modal.Open>
-                  <Modal.Window name='signup'>
-                    <SingUpForm type='PUBLISHER' />
-                  </Modal.Window>
-                </Modal>
+                </Modal.Open>
+                <Modal.Window name='signup'>
+                  <SingUpForm type='PUBLISHER' />
+                </Modal.Window>
+              </Modal>
 
             </StyledLi>
           )))}

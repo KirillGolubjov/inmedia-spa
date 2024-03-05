@@ -16,7 +16,7 @@ const StyledH1 = styled.h1`
 const Section = styled.section`
   /* height: 75vh; */
   background-color: var(--color-brand-black);
-  padding: 15rem 0;
+  padding: 25rem 0 20rem;
   position: relative;
   overflow: hidden;
   @media screen and (max-width: 768px){
@@ -69,7 +69,7 @@ const StyledText = styled.div`
 const commonKeyframeProperties = `
   0% {
     transform: translateZ(400px);
-    opacity: 0;
+    opacity: 0.1;
   }
   25% {
     opacity: 0.3;
@@ -165,7 +165,7 @@ function MainSection() {
           </StyledText>
         </Wrapper >
         <Wrapper >
-          <StyledAnimation>UNLOCK<br /> YOUR<br /> POTENTIAL<br /> WITH <br />INMEDIA</StyledAnimation>
+          <StyledAnimation>UNLOCK YOUR POTENTIAL WITH INMEDIA</StyledAnimation>
         </Wrapper>
         <CanvasAnimation />
       </Container>

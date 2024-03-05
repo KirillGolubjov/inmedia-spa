@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom"
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import styled from "styled-components"
-import SignUp from "./SignUp";
 import { currentYear } from "../common/utils";
+import styled from "styled-components"
+import SignUp from "../pages/SignUp";
 
 const Section = styled.section`
   max-width: 1240px;
