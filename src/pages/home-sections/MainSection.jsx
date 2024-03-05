@@ -19,8 +19,8 @@ const Section = styled.section`
   padding: 25rem 0 20rem;
   position: relative;
   overflow: hidden;
-  @media screen and (max-width: 768px){
-    padding: 6rem 0 4rem;
+  @media screen and (max-width: 865px){
+    padding: 10rem 0;
   }
   `
 
